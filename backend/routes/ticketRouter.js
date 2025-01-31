@@ -1,7 +1,10 @@
 const Router = require('express')
 const router = new Router()
+const ticketController = require('../controllers/ticketController')
 
-router.post('/',)
-router.get('/',)
+router.post('/', ticketController.create)
+router.get('/', ticketController.getAll)
+router.get('/', ticketController.getOne)
+router.get('/', ticketController.delete)
 
 module.exports = router

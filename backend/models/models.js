@@ -24,7 +24,7 @@ const Trips = sequelize.define('trips', {
 
 const Transport_providers = sequelize.define('transport_providers', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
-    name_company: {type: DataTypes.STRING, allowNull: false},
+    company_name: {type: DataTypes.STRING, allowNull: false},
     contact_info: {type: DataTypes.STRING},
 });
 
@@ -32,7 +32,7 @@ const Payments= sequelize.define('payments', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     payment_date: {type: DataTypes.DATE, allowNull: false},
     price: {type: DataTypes.FLOAT, allowNull: false},
-    status_of_payment: {type: DataTypes.STRING, allowNull: false},
+    status_of_payment: {type: DataTypes.ENUM('pending', 'paid', 'canceled'), allowNull: false},
 });
 
 const Stations= sequelize.define('stations', {
@@ -43,9 +43,9 @@ const Stations= sequelize.define('stations', {
 });
 
 const Tickets= sequelize.define('tickets', {
-    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+    id: {type: DataTypes.STRING, primaryKey: true, autoIncrement: true},
     ticket_number: {type: DataTypes.INTEGER, unique: true, allowNull: false},
-    seat: {type: DataTypes.INTEGER, allowNull: false},
+    seat: {type: DataTypes.STRING, allowNull: false},
 });
 
 User.hasMany(Bookings)
