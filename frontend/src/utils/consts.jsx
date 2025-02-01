@@ -1,0 +1,8 @@
+export const ADMIN_ROUTE = '/admin'
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const BOOKING_ROUTE = '/booking'
+export const TRIP_ROUTE = '/trip'
+export const PAYMENT_ROUTE = '/payment'
+export const STATION_ROUTE = '/station'
+export const TICKET_ROUTE = '/ticket'
