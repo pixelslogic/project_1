@@ -5,10 +5,7 @@ import AppRouter from './components/AppRouter';
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Booking />} />
-            <Route path="/auth" element={<Auth />} />
-        </Routes>
+        <AppRouter />
     );
 }
 
