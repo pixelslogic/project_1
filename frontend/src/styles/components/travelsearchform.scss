@@ -1,0 +1,174 @@
+.travel-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.travel-search-form {
+  background-color: $color-main !important;
+  color: $color-text;
+  background: url('src/source/img/gradient-map.png') no-repeat center center;
+  background-size: contain;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-search-form h1 {
+  font-size: 96px;
+  text-align: center;
+  font-family: $jura;
+  line-height: 90px;
+  padding-bottom: 90px;
+  margin: 0;
+  background: linear-gradient(45deg, $color-text, $color-dark-blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.nav-tabs .nav-link {
+  color: $color-text;
+  border: none;
+  background: none;
+  font-family: $jura;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: $color-text;
+  color: $color-main;
+  border-radius: 5px;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+  border-radius: 0;
+  height: 50px;
+  background-color: $color-text;
+  color: $color-gray;
+  font-weight: 500;
+  font-family: $jura;
+}
+
+.btn-light {
+  color: $color-gray;
+  border: none;
+  background-color: $color-text;
+  font-weight: bold;
+  font-family: $jura;
+
+  &:hover {
+    background-color: #d0d0d0;
+  }
+}
+
+.btn-dark {
+  background-color: $color-dark-blue;
+  border: 0;
+  font-weight: 500;
+  height: 50px;
+  font-family: $jura;
+
+  &:hover {
+    background-color: $color-darkest-blue;
+  }
+}
+
+.travel-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  color: $color-text !important;
+  gap: 10px;
+
+  span {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.transport-icon {
+  background-color: $color-text;
+  border-radius: 50%;
+  padding: 5px;
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+.date-selector-wrapper {
+  position: relative;
+}
+
+.date-input-wrapper {
+  position: relative;
+
+  .date-selector-input {
+      padding-left: 40px;
+      background-color: white;
+      cursor: pointer;
+  }
+
+  .travelSearchIcon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      pointer-events: none;
+  }
+}
+
+.date-selector-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.react-autosuggest__suggestion {
+  padding: 8px 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #f0f0f0;
+}

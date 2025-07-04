@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
 import UserBooking from '../booking/userBooking'
+import './styles/styles.scss';
 
 export const Context = createContext(null)
 

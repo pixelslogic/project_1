@@ -3,7 +3,8 @@ import Auth from "./pages/Auth";
 import Ticket from "./pages/Ticket";
 import Station from "./pages/Station";
 import Admin from "./pages/Admin";
-import { ADMIN_ROUTE, BOOKING_ROUTE, REGISTRATION_ROUTE, STATION_ROUTE, TICKET_ROUTE, LOGIN_ROUTE } from "./utils/consts";
+import Payment from "./pages/Payment"
+import { ADMIN_ROUTE, BOOKING_ROUTE, REGISTRATION_ROUTE, STATION_ROUTE, TICKET_ROUTE, LOGIN_ROUTE, PAYMENT_ROUTE } from "./utils/consts";
 
 
 export const authRoutes = [
@@ -14,6 +15,10 @@ export const authRoutes = [
     {
         path: TICKET_ROUTE,
         Component: Ticket
+    },
+    {
+        path: PAYMENT_ROUTE,
+        Component: Payment
     },
 
 ]
@@ -32,7 +37,7 @@ export const publicRoutes = [
         Component: Auth
     },
     {
-        path: STATION_ROUTE,
+        path: STATION_ROUTE + '/:id',
         Component: Station
     },
 

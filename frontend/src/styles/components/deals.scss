@@ -1,0 +1,28 @@
+.deals-wrapper {
+    font-family: $jura;
+}
+
+.deals-wrapper h2 {
+    color: $color-dark-gray;
+}
+
+.deals {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+    gap: 40px;
+    background-color: $color-white;
+}
+
+.deals-card {
+    border-radius: 5px;
+    background-color: $color-text;
+    box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+
+    &--large {
+        margin-top: 40px;
+    }
+}
+
+.deals-card img {
+    border-radius: 5px 5px 0 0;
+}

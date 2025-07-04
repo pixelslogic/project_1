@@ -1,10 +1,14 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
 
 const Booking= () => {
     return (
-        <div>
-            Booking
-        </div>
+        <Container>
+            <Row>
+                
+            </Row>
+            
+        </Container>
     )
 }
 

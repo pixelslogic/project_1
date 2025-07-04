@@ -1,0 +1,40 @@
+.reviews-container {
+    font-family: $jura;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.reviews-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.reviews-card {
+    display: grid;
+    grid-template-rows: 260px;
+    grid-template-columns: min-content 1fr;
+    gap: 16px;
+    padding: 20px 22px;
+    border: 1px solid $color-border;
+}
+
+.reviews-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.reviews-photo {
+    width: 90px;
+    height: 90px;
+}
+
+.reviews-button {
+    background: none;
+    color: $color-blue;
+    padding: 0;
+    border: none;
+}
+
+.reviews-wrapper p {
+    text-align: justify;
+}

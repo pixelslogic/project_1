@@ -1,0 +1,38 @@
+.navbar {
+    background-color: $color-main;
+
+    .nav-link {
+        color: $color-text;
+        font-family: $jura;
+        font-weight: 600;
+
+        &:hover {
+            color: $color-text;
+            text-decoration: underline;
+        }
+    }
+
+    .nav-logo-link {
+        :hover {
+            opacity: 0.6;
+        }
+    }
+
+    .navbar-nav {
+        margin: 0 !important;
+    }
+
+    .nav-link.btn-primary {
+        background-color: $color-dark-blue;
+
+        &:hover {
+            background-color: $color-darkest-blue;
+            color: $color-text;
+            text-decoration: none;
+        }
+    }
+}
+
+.search-nav {
+    border-bottom: 0;
+}

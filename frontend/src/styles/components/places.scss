@@ -1,0 +1,24 @@
+.places-wrapper {
+    font-family: $jura;
+}
+
+.places-wrapper h2 {
+    color: $color-dark-gray;
+}
+
+.places {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 3fr));
+    gap: 40px;
+    background-color: $color-white;
+}
+
+.places-card {
+    border-radius: 5px;
+    background-color: $color-text;
+    box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.places-card img {
+    border-radius: 5px 5px 0 0;
+}
